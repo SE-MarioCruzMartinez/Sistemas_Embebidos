@@ -1,6 +1,6 @@
 # INSTRUCCIONES DE USO
 
-Antes de realizar la copilacion y ejecución del programa, es necesario tener instalado las siguientes lobrerias
+Antes de realizar la copilacion y ejecución del programa, es necesario tener instalado las siguientes librerias
 -	MD_MENU
 -	MD_SWITCH
 -	LiquidCrystal_I2C
