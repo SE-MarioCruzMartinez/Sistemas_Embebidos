@@ -39,31 +39,24 @@ bool display(MD_Menu::userDisplayAction_t action, char *msg)
 #endif
 
 
-#if LCD_20X4
+#if DISPLAY_LCD
 //Utiliacion de LCD de 20X4 para el manejor del Sistema
-//Incluimos las librerias necesarias
-#include <Wire.h>
-#include <LiquidCrystal_I2C.h>
-//Dependiendo del las conecciones, sera la direccion 0x2X 
-//para su comunicacion I2C
-LiquidCrystal_I2C lcd(0x27,20,4);
+
 bool display(MD_Menu::userDisplayAction_t action, char *msg)
 {
-  //Variable es estatica que solo es creada cuando al funcion es llamada
-  //Al terminar la funcion, es desctruida
-  static char szLine[20 + 1] = { '\0'};
+  static char szLine[LCD_COLS + 1] = { '\0' };
+
   switch (action)
   {
   case MD_Menu::DISP_INIT:
-    lcd.init(); //Inicialiamos la LCD
-    lcd.backlight();//PRENDEMOS LA LUZ DE FONDO DE LA LCD
-    lcd.clear(); //Limpiamos pantalla
+    lcd.begin(LCD_COLS, LCD_ROWS);
+    lcd.clear();
     lcd.noCursor();
-    memset(szLine, ' ', 20);//Vaciamos
+    memset(szLine, ' ', LCD_COLS);
     break;
-    
+  
   case MD_Menu::DISP_CLEAR:
-    lcd.clear();//limpiamos LCD
+    lcd.clear();
     break;
 
   case MD_Menu::DISP_L0:

@@ -43,10 +43,11 @@ MD_Menu::userNavAction_t navigation(uint16_t &incDelta)
 //y long clock (ESC) se hara uso de la libreria MD_UISwitch
 #include <MD_UISwitch.h>
 
-//const uint8_t INC_PIN = 3;//Subir
-//const uint8_t DEC_PIN = 4;//Bajar
-//const uint8_t CTL_PIN = 5;//Seleccionar
-uint8_t pins[] = { INC_PIN, DEC_PIN, CTL_PIN };
+const uint8_t INC_PIN = 2;//Subir
+const uint8_t DEC_PIN = 3;//Bajar
+const uint8_t CTL_PIN = 10;//Seleccionar
+const uint8_t ESC_PIN = 11;//Salir
+uint8_t pins[] = { INC_PIN, DEC_PIN, CTL_PIN, ESC_PIN};
 
 //Creamos la funcion especial para el manejo de los botones
 //de la libreria MD_UISwitch
@@ -65,26 +66,26 @@ MD_Menu::userNavAction_t navigation(uint16_t &incDelta)
 
   switch (swNav.read())
   {
-    case MD_UISwitch::KEY_PRESS:
+    case MD_UISwitch::KEY_LONGPRESS:
     {
-      lcd.print(swNav.getKey());
+      Serial.print(swNav.getKey());
       switch (swNav.getKey())
       {
       case INC_PIN: nav = MD_Menu::NAV_INC; break;
       case DEC_PIN: nav = MD_Menu::NAV_DEC; break;
       case CTL_PIN: nav = MD_Menu::NAV_SEL; break;
+      case ESC_PIN: nav = MD_Menu::NAV_ESC; break;
       }
     }
     break;
-
-    case MD_UISwitch::KEY_LONGPRESS:
+    /*
+    case MD_UISwitch::KEY_RPTPRESS:
     {
       if (swNav.getKey() == 2)
         nav = MD_Menu::NAV_ESC;
     }
-    break;
+    break;*/
   }
-
   incDelta = 1;
   
   return(nav);

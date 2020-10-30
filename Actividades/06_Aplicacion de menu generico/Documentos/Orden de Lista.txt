@@ -1,0 +1,26 @@
+[MENU - Principal]
+- LED's
+- Lista
+- Sensor
+- Servo
+- Buzer
+
+[SUB_Menu] 
+	-LED's
+	  *On/OFf
+	  
+
+	-Lista
+	  -Frutas**
+		*(Peras | narajas | ETC)
+	  -Boleano
+	 	*Y|N
+
+	-Sensor
+	  *Potenciometro
+
+	-Servo
+	  *Angulos del servo (0° | 40° | 90° | 120°)
+	  
+	-Buzer
+	  *Tonos    { 1bit | 2bit | 4bit | 8bit}
