@@ -1,3 +1,5 @@
+
+
 /*
  *******************************************************************************
  * SerialEvent Ejemplo:
@@ -14,7 +16,7 @@ Separador s;     //Estancia en separador
 //======[AJUSTES PRINCIPALES]===================================================
 void setup() {
 //Inicio serial e indico accion a realizar.
-Serial.begin(9600);
+Serial.begin(57600);
 Serial.println("Ingresa un texto de tres palabras separados por coma. ");
 Serial.println(" Ejemplo: Hola,como,estas");
 
