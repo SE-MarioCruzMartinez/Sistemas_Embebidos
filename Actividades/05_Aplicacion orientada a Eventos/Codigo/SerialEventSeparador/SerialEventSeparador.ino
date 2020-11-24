@@ -46,10 +46,4 @@ void serialEvent(){
 
   Serial.println("Ingresa un texto de 3 palabras separadas por coma. ");
  Serial.println("Ejemplo: Hola,como,estas");
-
-
-
-
-
-  
   }

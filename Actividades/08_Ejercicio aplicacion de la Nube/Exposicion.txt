@@ -1,0 +1,69 @@
+Ubidots es una empresa de dos plataformas: Ubidots y Ubidots STEM.
+
+El plan STEM es una licencia no comercial que respalda nuestra misión de hacer que IoT sea más fácil y más accesible para todos y es utilizado por miles de estudiantes, investigadores y aficionados de todo el mundo. Ubidots STEM se aplica mejor a proyectos de bricolaje y usos no comerciales.
+
+PROTIP: Ubidots STEM es la evolución de 'Ubidots for Education' (app.ubidots.com), que ya no se mantiene y se cerrará pronto. Si todavía tiene una cuenta de Ubidots for Education, le recomendamos encarecidamente que traslade su proyecto de IoT a Ubidots STEM.
+
+Por otro lado, los proyectos destinados a aplicaciones comerciales o industriales deben utilizar las herramientas de desarrollo avanzadas y la confiabilidad de la plataforma central de Ubidots, incluso en las fases de creación de prototipos. Para aplicaciones que requieren más de 3 dispositivos, es probable que la plataforma Ubidots se adapte mejor.
+
+
+¿Cuáles son las diferencias entre Ubidots y Ubidots STEM?
+Como producto gratuito, Ubidots STEM tiene características y capacidad limitadas:
+
+1) STEM de Ubidots
+Utilizar
+Limitado a uso no comercial ÚNICAMENTE (educación personal, investigación de IoT o proyectos de bricolaje)
+Capacidad
+Dispositivos: hasta 10 dispositivos. Los primeros 3 dispositivos son gratis, luego $ 4.5 / dispositivo / mes
+Variables: hasta 10 variables por dispositivo.
+Ingestión de datos: 4000 puntos por día en todos sus dispositivos
+Extracción de datos: 50.000 puntos por día en toda su cuenta
+Velocidad de datos: 1 solicitud por segundo, en todos sus dispositivos
+Retención de datos: 1 mes
+Paneles: hasta 3 paneles, con hasta 10 widgets cada uno
+SMS y llamadas de voz: 10 SMS y 1 llamada de voz gratis por mes (solo en EE. UU. Y Canadá), luego se aplican tarifas estándar
+Correos electrónicos: 100 correos electrónicos gratis por mes, luego se aplican tarifas estándar
+Tiempo de actividad: Sin SLA: recursos de servidor compartidos entre todos los usuarios de STEM. La velocidad y la confiabilidad se basan en las solicitudes totales de la plataforma en un segundo determinado.
+Asistencia: basada en la comunidad o de autoservicio mediante nuestro Centro de ayuda y los documentos de API
+Caracteristicas
+Paneles de control estáticos y dinámicos
+Protocolos HTTP, MQTT, TCP y UDP
+SMS, llamadas de voz, correo electrónico, WebHook y alertas de Slack. Los mensajes de Telegram no son compatibles.
+NOTA: Debido a que Telegram limita la cantidad de mensajes salientes por minuto, esta función está reservada solo para nuestros usuarios comerciales, lo que nos permite monitorear mejor y preservar la calidad del servicio.
+
+Cálculo de variables sintéticas (solo funciones matemáticas; no se admiten el rango de datos ni las funciones avanzadas).
+Si es una institución educativa o una organización sin fines de lucro, tenga en cuenta que muchas de sus organizaciones compañeras eligen actualizar a licencias comerciales de Ubidots que buscan una o varias de las siguientes:
+
+Retención de datos más prolongada
+Habilite un portal de etiqueta blanca para que los estudiantes o investigadores accedan a cuentas privadas
+Capacidad para ejecutar variables sintéticas avanzadas
+Fiabilidad y / o soporte
+2) Ubidots
+Utilizar
+Entusiastas de IoT cuyo conocimiento les permite resolver problemas comerciales utilizando tecnologías de IoT y desean crear un negocio de IoT en torno a esto.
+Emprendedores de IoT que buscan acelerar el tiempo de comercialización sin tener que contratar un equipo de software para desarrollar una aplicación de IoT completa
+Ingenieros de IoT dentro de organizaciones existentes, que buscan acelerar sus iniciativas internas de IoT
+Capacidad
+Dispositivos: de 1 a miles de dispositivos (varía según el plan)
+Variables: hasta 20 variables por dispositivo, luego un dispositivo se factura como 2 dispositivos o más
+Ingestión de datos: a partir de 2 millones de puntos por mes (varía según el plan). Mecanismos de ingesta de datos dedicados, maximizando el tiempo de actividad y los tiempos de respuesta de la API
+Extracción de datos: a partir de 20 millones de puntos por mes (varía según el plan)
+Velocidad de datos: 4 solicitudes por segundo, en todos sus dispositivos
+Retención de datos: 2 años
+Paneles: paneles y widgets ilimitados
+SMS y llamadas de voz: alertas ilimitadas. Precios basados ​​en el país receptor, al menos un 60% más bajos que Ubidots STEM.
+Tiempo de actividad: 99,5% de tiempo de actividad con el mejor esfuerzo incluido. Planes SLA disponibles a pedido.
+Soporte: Soporte por chat y correo electrónico incluido. Planes de soporte prioritario disponibles a pedido.
+
+Caracteristicas
+
+ TODAS las funciones de la licencia STEM, más:
+
+Gestión de aplicaciones: cree varias aplicaciones, cada una con un dominio, logotipo y colores personalizados.
+Creador de aplicaciones de IoT: cree widgets personalizados con su propio HTML / JS e impleméntelos en varios paneles.
+Gestión de dispositivos: cree organizaciones dentro de las aplicaciones, cada una con sus propios dispositivos, usuarios, paneles y eventos.
+Gestión de usuarios: cree usuarios e implemente su aplicación con diferentes permisos y capacidades de acceso para que los usuarios puedan ver lo que necesitan y nada más.
+Herramientas de análisis de Ubidots: ejecute funciones sin servidor o cree su propia API para decodificar o codificar marcos de datos utilizando UbiFunctions. Calcule expresiones matemáticas y estadísticas directamente desde la interfaz de usuario de Ubidots con variables sintéticas.
+Cree sus propios puntos finales de API para acceder a datos, API y herramientas de terceros mediante solicitudes HTTPS.
+Motor de eventos complejos: active la lógica empresarial y los eventos del motor de eventos condicionales complejos (SMS, correo electrónico, Telegram, Slack, llamadas de voz) en Ubidots
+Utilice los tipos de dispositivos de Ubidots para configurar las propiedades, la apariencia y
