@@ -200,9 +200,10 @@ void Tarea6( void * parameter) {
     if(Serial.available())
     {
       dato=Serial.read();
+      
       if(dato=='e')break;
-      else
-        Serial.println("------------- 06");
+      
+      else Serial.println("------------- 06");
     //El tiempo activo es más corto
     }
     delay(1000);
